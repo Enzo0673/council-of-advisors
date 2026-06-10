@@ -1,0 +1,12 @@
+{
+  "name": "council-of-advisors",
+  "version": "1.0.0",
+  "description": "A Claude Code skill that analyzes complex problems through 5 advisors with opposing perspectives, arbitrated by a Council President who delivers a final recommendation and action plan.",
+  "author": "Enzo0673",
+  "skills": [
+    {
+      "name": "conseil-des-conseillers",
+      "path": "skills/conseil-des-conseillers/SKILL.md"
+    }
+  ]
+}
