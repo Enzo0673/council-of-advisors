@@ -5,7 +5,7 @@
 set -e
 
 REPO="https://github.com/Enzo0673/council-of-advisors"
-SKILL_FILE="https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main/skills/conseil-des-conseillers/SKILL.md"
+SKILL_FILE="https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main/skills/council-of-advisors/SKILL.md"
 PLUGIN_JSON="https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main/.claude-plugin/plugin.json"
 GEMINI_MD="https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main/GEMINI.md"
 AGENTS_MD="https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main/AGENTS.md"
@@ -22,8 +22,8 @@ echo ""
 install_claude_code() {
   DEST="$HOME/.claude/plugins/marketplaces/council-of-advisors"
   echo "  Detected: Claude Code"
-  mkdir -p "$DEST/skills/conseil-des-conseillers" "$DEST/.claude-plugin"
-  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/conseil-des-conseillers/SKILL.md"
+  mkdir -p "$DEST/skills/council-of-advisors" "$DEST/.claude-plugin"
+  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/council-of-advisors/SKILL.md"
   curl -fsSL "$PLUGIN_JSON" -o "$DEST/.claude-plugin/plugin.json"
   echo -e "  ${GREEN}Installed to $DEST${NC}"
   echo "  Restart Claude Code to activate."
@@ -32,8 +32,8 @@ install_claude_code() {
 install_gemini() {
   DEST="$HOME/.gemini/plugins/council-of-advisors"
   echo "  Detected: Gemini CLI"
-  mkdir -p "$DEST/skills/conseil-des-conseillers"
-  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/conseil-des-conseillers/SKILL.md"
+  mkdir -p "$DEST/skills/council-of-advisors"
+  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/council-of-advisors/SKILL.md"
   curl -fsSL "$GEMINI_MD" -o "$DEST/GEMINI.md"
   echo -e "  ${GREEN}Installed to $DEST${NC}"
   echo "  Restart Gemini CLI to activate."
@@ -42,8 +42,8 @@ install_gemini() {
 install_copilot() {
   DEST="$HOME/.copilot/plugins/council-of-advisors"
   echo "  Detected: Copilot CLI"
-  mkdir -p "$DEST/skills/conseil-des-conseillers"
-  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/conseil-des-conseillers/SKILL.md"
+  mkdir -p "$DEST/skills/council-of-advisors"
+  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/council-of-advisors/SKILL.md"
   echo -e "  ${GREEN}Installed to $DEST${NC}"
   echo "  Restart Copilot CLI to activate."
 }
@@ -51,8 +51,8 @@ install_copilot() {
 install_codex() {
   DEST="$HOME/.codex/plugins/council-of-advisors"
   echo "  Detected: Codex"
-  mkdir -p "$DEST/skills/conseil-des-conseillers"
-  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/conseil-des-conseillers/SKILL.md"
+  mkdir -p "$DEST/skills/council-of-advisors"
+  curl -fsSL "$SKILL_FILE" -o "$DEST/skills/council-of-advisors/SKILL.md"
   curl -fsSL "$AGENTS_MD" -o "$DEST/AGENTS.md"
   echo -e "  ${GREEN}Installed to $DEST${NC}"
   echo "  Restart Codex to activate."
@@ -83,5 +83,5 @@ for TOOL in "${INSTALLED[@]}"; do
   echo ""
 done
 
-echo -e "  ${GREEN}Done!${NC} Invoke the skill with: /conseil-des-conseillers"
+echo -e "  ${GREEN}Done!${NC} Invoke the skill with: /council-of-advisors"
 echo ""

@@ -1,1 +1,1 @@
-@./skills/conseil-des-conseillers/SKILL.md
+@./skills/council-of-advisors/SKILL.md

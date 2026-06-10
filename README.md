@@ -63,7 +63,7 @@ Then restart your AI CLI tool to activate.
 
 ## Usage
 
-Invoke with the `Skill` tool or type `/conseil-des-conseillers` in any supported session.
+Invoke with the `Skill` tool or type `/council-of-advisors` in any supported session.
 
 Works best for:
 - Strategic decisions with multiple valid options

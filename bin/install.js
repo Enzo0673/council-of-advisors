@@ -11,7 +11,7 @@ const BASE_URL =
   "https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main";
 
 const FILES = {
-  "skills/conseil-des-conseillers/SKILL.md": `${BASE_URL}/skills/conseil-des-conseillers/SKILL.md`,
+  "skills/council-of-advisors/SKILL.md": `${BASE_URL}/skills/council-of-advisors/SKILL.md`,
   ".claude-plugin/plugin.json": `${BASE_URL}/.claude-plugin/plugin.json`,
   "GEMINI.md": `${BASE_URL}/GEMINI.md`,
   "AGENTS.md": `${BASE_URL}/AGENTS.md`,
@@ -21,25 +21,25 @@ const TARGETS = {
   claude: {
     detect: () => commandExists("claude"),
     dest: path.join(os.homedir(), ".claude", "plugins", "marketplaces", "council-of-advisors"),
-    files: ["skills/conseil-des-conseillers/SKILL.md", ".claude-plugin/plugin.json"],
+    files: ["skills/council-of-advisors/SKILL.md", ".claude-plugin/plugin.json"],
     label: "Claude Code",
   },
   gemini: {
     detect: () => commandExists("gemini"),
     dest: path.join(os.homedir(), ".gemini", "plugins", "council-of-advisors"),
-    files: ["skills/conseil-des-conseillers/SKILL.md", "GEMINI.md"],
+    files: ["skills/council-of-advisors/SKILL.md", "GEMINI.md"],
     label: "Gemini CLI",
   },
   copilot: {
     detect: () => commandExists("gh-copilot"),
     dest: path.join(os.homedir(), ".copilot", "plugins", "council-of-advisors"),
-    files: ["skills/conseil-des-conseillers/SKILL.md"],
+    files: ["skills/council-of-advisors/SKILL.md"],
     label: "Copilot CLI",
   },
   codex: {
     detect: () => commandExists("codex"),
     dest: path.join(os.homedir(), ".codex", "plugins", "council-of-advisors"),
-    files: ["skills/conseil-des-conseillers/SKILL.md", "AGENTS.md"],
+    files: ["skills/council-of-advisors/SKILL.md", "AGENTS.md"],
     label: "Codex",
   },
 };
@@ -95,7 +95,7 @@ async function main() {
     console.log(`  Restart ${target.label} to activate.\n`);
   }
 
-  console.log("  \x1b[32mDone!\x1b[0m Invoke with: /conseil-des-conseillers\n");
+  console.log("  \x1b[32mDone!\x1b[0m Invoke with: /council-of-advisors\n");
 }
 
 main().catch((err) => {

@@ -1,6 +1,6 @@
 ---
-name: conseil-des-conseillers
-description: Analyse un problème complexe via un conseil de 5 conseillers aux perspectives opposées, arbitré par un président qui tranche et fournit une recommandation finale avec plan d'action. Utiliser pour toute décision difficile, choix stratégique, ou problème où plusieurs angles de vue sont utiles.
+name: council-of-advisors
+description: Analyzes a complex problem through a council of 5 advisors with opposing perspectives, arbitrated by a President who delivers a final recommendation and action plan. Use for any difficult decision, strategic choice, or problem where multiple angles are needed.
 ---
 
 # Le Conseil des Conseillers
@@ -91,4 +91,4 @@ Ce skill s'applique quand l'utilisateur :
 - Pose une question complexe avec plusieurs options possibles
 - Demande une décision ou un arbitrage
 - Soumet un problème stratégique, professionnel ou personnel difficile
-- Invoque explicitement `/conseil-des-conseillers` ou demande "passe ça au conseil"
+- Invoque explicitement `/council-of-advisors` ou demande "passe ça au conseil"
