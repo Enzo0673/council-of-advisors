@@ -1,8 +1,11 @@
 {
   "name": "council-of-advisors",
   "version": "1.0.0",
-  "description": "A Claude Code skill that analyzes complex problems through 5 advisors with opposing perspectives, arbitrated by a Council President who delivers a final recommendation and action plan.",
-  "author": "Enzo0673",
+  "description": "An AI reasoning skill for Claude Code, Gemini CLI, Copilot CLI and Codex — simulates a council of 5 advisors with opposing perspectives arbitrated by a President who delivers a final recommendation, key lessons and action plan.",
+  "author": {
+    "name": "Enzo Leclercq",
+    "github": "Enzo0673"
+  },
   "skills": [
     {
       "name": "conseil-des-conseillers",

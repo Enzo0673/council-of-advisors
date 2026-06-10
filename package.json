@@ -1,0 +1,18 @@
+{
+  "name": "council-of-advisors",
+  "version": "1.0.0",
+  "description": "An AI reasoning skill for Claude Code, Gemini CLI, Copilot CLI and Codex — simulates a council of 5 advisors with opposing perspectives arbitrated by a President who delivers a final recommendation, key lessons and action plan.",
+  "bin": {
+    "council-of-advisors": "./bin/install.js"
+  },
+  "keywords": ["claude", "claude-code", "gemini", "copilot", "codex", "skill", "plugin", "ai", "reasoning"],
+  "author": "Enzo0673",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enzo0673/council-of-advisors.git"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

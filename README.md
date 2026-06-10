@@ -1,6 +1,6 @@
 # Council of Advisors
 
-A Claude Code skill plugin that analyzes complex problems through **5 advisors with opposing perspectives**, arbitrated by a Council President who delivers a final recommendation and action plan.
+An AI reasoning skill for **Claude Code, Gemini CLI, Copilot CLI and Codex** — simulates a council of 5 advisors with opposing perspectives arbitrated by a President who delivers a final recommendation, key lessons and action plan.
 
 ## The 5 Advisors
 
@@ -21,16 +21,49 @@ The advisors analyze the problem independently, then react to each other's ideas
 
 ## Installation
 
+### Option 1 — One-liner (auto-detects your tools)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Enzo0673/council-of-advisors/main/install.sh | bash
+```
+
+### Option 2 — npx
+
+```bash
+npx council-of-advisors
+```
+
+### Option 3 — Manual (per tool)
+
+**Claude Code**
 ```bash
 git clone https://github.com/Enzo0673/council-of-advisors \
   ~/.claude/plugins/marketplaces/council-of-advisors
 ```
 
-Then restart Claude Code.
+**Gemini CLI**
+```bash
+git clone https://github.com/Enzo0673/council-of-advisors \
+  ~/.gemini/plugins/council-of-advisors
+```
+
+**Copilot CLI**
+```bash
+git clone https://github.com/Enzo0673/council-of-advisors \
+  ~/.copilot/plugins/council-of-advisors
+```
+
+**Codex**
+```bash
+git clone https://github.com/Enzo0673/council-of-advisors \
+  ~/.codex/plugins/council-of-advisors
+```
+
+Then restart your AI CLI tool to activate.
 
 ## Usage
 
-Invoke with the `Skill` tool or type `/conseil-des-conseillers` in any Claude Code session.
+Invoke with the `Skill` tool or type `/conseil-des-conseillers` in any supported session.
 
 Works best for:
 - Strategic decisions with multiple valid options
